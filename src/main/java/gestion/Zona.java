@@ -5,19 +5,19 @@ import java.util.ArrayList;
 public class Zona {
     private String nombre;
     private Zoologico zoo;
-    private ArrayList<Animal> animales;
+    private ArrayList<Animal> animales =new ArrayList<Animal>();
+	
+	public Zona() {
+    	this(null, null);
+    }
     
     public Zona(String nombre, Zoologico zoo) {
         this.nombre = nombre;
         this.zoo = zoo;
     }
 
-    public Zona() {
-    	this(null, null);
-
-    }
-    public void agregarAnimales(Animal animales1) {
-        this.animales.add(animales1);
+	public void agregarAnimales(Animal animales1) {
+        animales.add(animales1);
     }
     public int cantidadAnimales() {
 		return animales.size();
