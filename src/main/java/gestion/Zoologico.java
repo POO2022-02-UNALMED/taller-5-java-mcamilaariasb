@@ -46,10 +46,7 @@ public class Zoologico {
 		return zonas;
 	}
 
-	public static void setZonas(ArrayList<Zona> zonas) {
+	public static void setZona(ArrayList<Zona> zonas) {
 		Zoologico.zonas = zonas;
 	}
-
-	
-    
 }
